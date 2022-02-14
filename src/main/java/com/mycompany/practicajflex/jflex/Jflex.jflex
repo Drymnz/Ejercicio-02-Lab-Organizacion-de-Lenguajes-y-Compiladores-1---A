@@ -95,6 +95,7 @@ package com.mycompany.practicajflex.jflex;
 %}
 
 numero          =[0-9]+
+no              =[a-zA-Z]*
 unaVocal        =[q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*
 dosVocal        =[q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*
 tresVocal       =[q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*
@@ -107,6 +108,7 @@ cincoVocal      =[q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|
 {numero}        {
 		increaseNum();
                 }
+
 {cincoVocal}    {
 		increaseFiveVowel();
                 }
@@ -122,6 +124,7 @@ cincoVocal      =[q|w|r|t|y|p|ñ|l|k|j|h|g|f|d|s|z|x|c|v|b|n|m]*[a|e|i|o|u][q|w|
 {unaVocal}      {
 		increaseOneVowel();
                 }
+{no}        {}
 
 [\r|\t|\f|\n|\s]  {}
 

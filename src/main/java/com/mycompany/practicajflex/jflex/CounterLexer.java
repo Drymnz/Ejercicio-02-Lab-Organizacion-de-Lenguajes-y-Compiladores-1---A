@@ -63,11 +63,11 @@ public class CounterLexer {
   private static final int [] ZZ_CMAP_BLOCKS = zzUnpackcmap_blocks();
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
-    "\11\0\5\1\22\0\1\1\17\0\12\2\47\0\1\3"+
-    "\3\4\1\3\3\4\1\3\5\4\1\3\5\4\1\3"+
-    "\5\4\1\0\1\5\10\0\1\1\32\0\1\1\120\0"+
-    "\1\4\u018e\0\1\1\177\0\13\1\35\0\2\1\5\0"+
-    "\1\1\57\0\1\1\240\0\1\1\377\0";
+    "\11\0\5\1\22\0\1\1\17\0\12\2\7\0\32\3"+
+    "\6\0\1\4\3\5\1\4\3\5\1\4\5\5\1\4"+
+    "\5\5\1\4\5\5\1\0\1\6\10\0\1\1\32\0"+
+    "\1\1\120\0\1\7\u018e\0\1\1\177\0\13\1\35\0"+
+    "\2\1\5\0\1\1\57\0\1\1\240\0\1\1\377\0";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[1280];
@@ -94,11 +94,12 @@ public class CounterLexer {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\1\2\1\3\1\4\1\1\1\4\2\5"+
-    "\1\0\1\5\4\6\5\7\6\10";
+    "\1\1\1\2\1\1\1\3\1\1\1\4\1\1\1\4"+
+    "\1\2\2\5\1\4\1\0\1\5\2\6\1\5\2\6"+
+    "\2\7\1\6\3\7\2\10\1\7\5\10";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[26];
+    int [] result = new int[33];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -123,13 +124,14 @@ public class CounterLexer {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\6\0\6\0\14\0\22\0\30\0\36\0\44"+
-    "\0\52\0\30\0\60\0\66\0\74\0\102\0\110\0\116"+
-    "\0\124\0\132\0\140\0\146\0\154\0\162\0\170\0\176"+
-    "\0\204\0\212";
+    "\0\0\0\10\0\10\0\20\0\30\0\40\0\50\0\60"+
+    "\0\70\0\100\0\110\0\120\0\70\0\130\0\140\0\150"+
+    "\0\160\0\170\0\200\0\210\0\220\0\230\0\240\0\250"+
+    "\0\260\0\270\0\300\0\310\0\320\0\330\0\340\0\350"+
+    "\0\360";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[26];
+    int [] result = new int[33];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -152,20 +154,27 @@ public class CounterLexer {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\1\3\1\4\1\5\1\6\1\7\10\0\1\4"+
-    "\6\0\1\10\1\5\1\11\3\0\1\5\1\12\1\7"+
-    "\3\0\1\11\1\7\1\13\3\0\1\14\1\10\1\15"+
-    "\3\0\1\15\1\11\1\16\3\0\1\16\1\13\1\17"+
-    "\3\0\1\20\1\14\1\21\3\0\1\21\1\15\1\22"+
-    "\3\0\1\22\1\16\1\23\3\0\1\23\1\17\1\24"+
-    "\3\0\1\25\1\20\1\26\3\0\1\26\1\21\1\27"+
-    "\3\0\1\27\1\22\1\30\3\0\1\30\1\23\1\31"+
-    "\3\0\1\31\1\24\1\32\4\0\2\25\3\0\1\25"+
-    "\2\26\3\0\1\26\2\27\3\0\1\27\2\30\3\0"+
-    "\1\30\2\31\3\0\1\31\2\32";
+    "\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11"+
+    "\12\0\1\4\10\0\3\5\5\0\1\5\1\12\1\6"+
+    "\1\13\1\14\3\0\1\5\1\6\1\7\1\10\1\15"+
+    "\4\0\1\13\1\10\1\16\1\10\4\0\1\14\1\15"+
+    "\1\10\1\15\3\0\1\5\1\17\1\12\1\20\1\21"+
+    "\4\0\1\20\1\13\1\22\1\13\4\0\1\21\1\14"+
+    "\1\13\1\14\4\0\1\22\1\16\1\23\1\16\3\0"+
+    "\1\5\1\24\1\17\1\25\1\26\4\0\1\25\1\20"+
+    "\1\27\1\20\4\0\1\26\1\21\1\20\1\21\4\0"+
+    "\1\27\1\22\1\30\1\22\4\0\1\30\1\23\1\31"+
+    "\1\23\3\0\1\5\1\32\1\24\1\33\1\34\4\0"+
+    "\1\33\1\25\1\35\1\25\4\0\1\34\1\26\1\25"+
+    "\1\26\4\0\1\35\1\27\1\36\1\27\4\0\1\36"+
+    "\1\30\1\37\1\30\4\0\1\37\1\31\1\40\1\31"+
+    "\3\0\2\5\1\32\2\41\4\0\1\41\3\33\4\0"+
+    "\1\41\1\34\1\33\1\34\4\0\1\33\3\35\4\0"+
+    "\1\35\3\36\4\0\1\36\3\37\4\0\1\37\3\40"+
+    "\5\0\3\41";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[144];
+    int [] result = new int[248];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -208,10 +217,10 @@ public class CounterLexer {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\2\11\6\1\1\0\20\1";
+    "\1\1\2\11\11\1\1\0\24\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[26];
+    int [] result = new int[33];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -762,12 +771,12 @@ public class CounterLexer {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1:
-            { System.out.println("no pertenece al alfabeto");
+            { 
             }
             // fall through
           case 9: break;
           case 2:
-            { 
+            { System.out.println("no pertenece al alfabeto");
             }
             // fall through
           case 10: break;

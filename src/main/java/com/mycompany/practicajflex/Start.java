@@ -145,7 +145,7 @@ public class Start extends javax.swing.JFrame {
 
     private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
         if (!areaText.getText().isEmpty()) {
-            Reader reader = new StringReader(areaText.getText());
+            Reader reader = new StringReader(areaText.getText().toLowerCase());
             test = new CounterLexer(reader);
             int output;
             try {
