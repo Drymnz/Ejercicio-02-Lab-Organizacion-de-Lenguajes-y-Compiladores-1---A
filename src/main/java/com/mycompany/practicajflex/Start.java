@@ -34,6 +34,7 @@ public class Start extends javax.swing.JFrame {
     public Start() {
         initComponents();
         loadText();
+        this.setTitle("Aplicacion : Drymnz");
     }
 
     private void loadText() {
@@ -67,6 +68,7 @@ public class Start extends javax.swing.JFrame {
         listNumber = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(66, 230, 230));
 
         areaText.setColumns(20);
         areaText.setRows(5);
